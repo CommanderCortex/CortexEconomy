@@ -20,6 +20,7 @@ public class MongoConnect {
     public void connect(){
         MongoClient Client = new MongoClient(new MongoClientURI(plugin.getConfig().getString("uri")));
         setDatabase(Client.getDatabase("CEconomy"));
+        setPlayerData(database.getCollection("PlayerData"));
         MessageManager.ConsoleGood("DataBase Connected");
     }
 
@@ -39,7 +40,7 @@ public class MongoConnect {
 
         MessageManager.ConsoleBad("Document in Null for UUID: " +  uuid);
         return null;
-        
+
     }
 
     public MongoCollection getPlayerData() {

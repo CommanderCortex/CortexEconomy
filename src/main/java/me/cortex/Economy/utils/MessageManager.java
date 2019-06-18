@@ -21,4 +21,20 @@ public class MessageManager {
         Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE + message);
     }
 
+    public static void Red(String message){
+        Bukkit.getConsoleSender().sendMessage(ChatColor.RED + message);
+    }
+
+    public static void Gold(String message){
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GOLD + message);
+    }
+
+    public static void DarkRed(String message){
+        Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_RED + message);
+    }
+
+    public static void Bold(String message){
+        Bukkit.getConsoleSender().sendMessage(ChatColor.BOLD + message);
+    }
+
 }

@@ -39,6 +39,7 @@ public class MongoConnect {
 
         MessageManager.ConsoleBad("Document in Null for UUID: " +  uuid);
         return null;
+        
     }
 
     public MongoCollection getPlayerData() {

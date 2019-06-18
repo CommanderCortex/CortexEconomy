@@ -13,7 +13,6 @@ public class CEconomy extends JavaPlugin {
     public void onEnable(){
         plugin = this;
         instanceClasses();
-
         mongoConnect.connect();
 
     }

@@ -1,0 +1,11 @@
+  name: CortexEconomy
+    main: me.cortex.Economy.CEconomy
+  version: 0.0.1
+  depend:
+    - Vault
+
+commands:
+  ceco
+    ussage: /<ceco>
+      description: Main Command
+

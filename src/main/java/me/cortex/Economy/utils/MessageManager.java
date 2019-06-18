@@ -17,4 +17,8 @@ public class MessageManager {
         Bukkit.getConsoleSender().sendMessage(ChatColor.YELLOW + message);
     }
 
+    public static void Blue(String message){
+        Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE + message);
+    }
+
 }

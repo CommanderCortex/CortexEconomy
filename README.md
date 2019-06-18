@@ -1,1 +1,2 @@
 # CortexEconomy
+Priavte Economy Plugin

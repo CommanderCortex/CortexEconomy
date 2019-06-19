@@ -17,7 +17,7 @@ public class CommandManager implements CommandExecutor {
     private CEconomy plugin = CEconomy.getPlugin();
 
     //Sub Commands
-    private String main = "daecon";
+    private String main = "CEonomy";
 
     public void setup() {
         plugin.getCommand(main).setExecutor(this);

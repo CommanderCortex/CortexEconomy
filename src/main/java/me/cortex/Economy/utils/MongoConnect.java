@@ -60,4 +60,20 @@ public class MongoConnect {
     }
 
 
+    public MongoCollection getPlayerDataCollection() {
+        return playerData;
+    }
+
+    public void setPlayerDataCollection(MongoCollection playerData) {
+        this.playerData = playerData;
+    }
+
+    public MongoDatabase getDatabase() {
+        return database;
+    }
+
+    public void setDatabase(MongoDatabase database) {
+        this.database = database;
+    }
+
 }

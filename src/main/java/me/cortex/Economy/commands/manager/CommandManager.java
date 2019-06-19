@@ -8,9 +8,12 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class CommandManager implements CommandExecutor {
 
-    private ArrayList<SubComand> commands = new ArrayList<SubCommand>();
+    private ArrayList<SubCommand> commands = new ArrayList<SubCommand>();
     private CEconomy plugin = CEconomy.getPlugin();
 
     //Sub Commands
@@ -44,7 +47,7 @@ public class CommandManager implements CommandExecutor {
                 try {
                     target.onCommand(player, args);
                 } catch (Exception var9) {
-                    MessageManager.playerBad(player, "An error has occured: " + var9.getCause());
+                    MessageManager.PlayerBad(player, "An error has occured: " + var9.getCause());
                     var9.printStackTrace();
                 }
             }
